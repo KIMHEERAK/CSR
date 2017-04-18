@@ -1,0 +1,38 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+/*font-family: "KoPub Batang";*/
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+
+.Nav-service {
+  padding-top : 15px;
+  background-color: rgb(238, 238, 238);
+  height : 55px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.Nav-Text{
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 100;
+  text-decoration: none;
+  margin-left: 2em;
+}
+
+.Nav-Text:hover {
+  color: rgb(0, 78, 181);
+  text-decoration: none;
+}
+
+.Nav-Text:active {
+  color: rgb(0, 78, 181);
+  text-decoration: none;
+}
+
+.Nav-Text:focus {
+  color: rgb(0, 78, 181);
+  text-decoration: none;
+}

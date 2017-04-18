@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*font-family: "Nanum Gothic";*/
+
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+/*font-family: "KoPub Batang";*/
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+/*font-family: "Nanum Pen Script";*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+/*font-family: 'Hanna', sans-serif;*/
+
+
+.styling-container {
+    max-width: 100%;
+    height: 600px;
+    /*background-color: rgb(255, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../public/src/image/styling_image.jpg);
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+.styling-text-container {
+  padding-top: 20em;
+  text-align: right;
+  padding-right: 10em;
+}
+
+.styling-title-text {
+    font-family: "KoPub Batang";
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.styling-body-text {
+    margin-top: 30px;
+    font-family: "Nanum Gothic";
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.styling-description {
+    margin-top: 10px;
+    font-family: "Nanum Gothic";
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*font-family: "Nanum Gothic";*/
+
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+/*font-family: "KoPub Batang";*/
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+/*font-family: "Nanum Pen Script";*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+/*font-family: 'Hanna', sans-serif;*/
+
+
+.X-container {
+    max-width: 100%;
+    height: 600px;
+    /*background-color: rgb(255, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../public/src/image/x-image2.png);
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+.X-text-container {
+  padding-top: 20em;
+  text-align: center;
+}
+
+.X-title-text {
+    font-family: "KoPub Batang";
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.X-body-text {
+    margin-top: 30px;
+    font-family: "Nanum Gothic";
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.X-description {
+    margin-top: 10px;
+    font-family: "Nanum Gothic";
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+
+.sick-container {
+    margin-top: 2em;
+    max-width: 100%;
+    height: 800px;
+    /*background-color: rgb(255, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../public/src/image/sick_image.jpg);
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+.sick-text-container {
+  padding-top: 15em;
+  padding-right: 45em;
+
+  text-align: center;
+}
+
+.sick-title-text {
+    font-family: "KoPub Batang";
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.sick-body-text {
+    margin-top: 30px;
+    font-family: "Nanum Gothic";
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.sick-description {
+    margin-top: 10px;
+    font-family: "Nanum Gothic";
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
