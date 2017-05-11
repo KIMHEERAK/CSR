@@ -1,86 +1,86 @@
-@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Pinyon+Script);
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.Logo-header {
-  background-color: rgb(0, 0, 0);
-  height: 43px;
-  padding: 10px;
+.door-company-title-container {
+  width: 100%;
+  height: 70px;
+  padding-top: 20px;
   text-align: center;
-  letter-spacing: .005em;
-  word-spacing : 70px;
+  letter-spacing: .05em;
 }
 
-.App-header {
-  font-family: 'Orbitron', sans-serif;
-  background-color: rgb(0, 0, 0);
-  height: 43px;
-  padding: 10px;
-  text-align: center;
-  letter-spacing: .005em;
-  word-spacing : 70px;
-}
-
-.Text-Header{
-  color: rgb(241, 245, 245);
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.Text-Header:hover {
-  color: rgb(185, 186, 182);
-  text-decoration: none;
-}
-
-.Text-Header:active {
-  color: rgb(185, 186, 182);
-  text-decoration: none;
-}
-
-.Text-Header:focus {
-  color: rgb(185, 186, 182);
-  text-decoration: none;
-}
-
-hr.style1{
-	border-top: 1px solid #8c8b8b;
-}
-
-.App-footer {
+.door-company-title-text {
   font-family: 'Roboto', sans-serif;
-  padding-top: 10px;
-  position: relative;
-  bottom: 0;
-  width:100%;
-  height:100px;
-  background-color:rgb(242, 242, 242);
-}
-
-.Text-footer1 {
-  font-size : 12px;
-  line-height: 28px;
-  font-style: normal;
+  font-size: 23px;
   font-weight: bold;
-  letter-spacing: 0.055px;
-  color: rgb(125, 124, 124);
-  margin-left: 20%;
 }
 
-.Text-footer2 {
-  font-size : 12px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.055px;
-  color: rgb(125, 124, 124);
-  margin-left: 20%;
+.door-company-sign-container {
+  width: 100%;
+  height: 110px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.door-company-sign-text {
+  font-size: 50px;
+  font-family: 'Pinyon Script', cursive;
+  font-weight: 100;
+}
+
+.door-list-container {
+  display: block;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+
+
+.door-list-text-first {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  color: rgb(103, 103, 103);
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: .05em;
+}
+
+.door-list-text-first:hover {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.door-list-text-first:active {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.door-list-text-first:focus {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.door-list-text {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  color: rgb(103, 103, 103);
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 3.5em;
+  letter-spacing: .05em;
+}
+
+.door-list-text:hover {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.door-list-text:active {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.door-list-text:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }

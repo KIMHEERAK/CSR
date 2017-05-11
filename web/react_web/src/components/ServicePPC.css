@@ -36,6 +36,11 @@
 .looser-text-container {
     padding-top: 24em;
     margin-left: 60%;
+}
+
+.looser-text-container-slide {
+    padding-top: 24em;
+    margin-left: 60%;
     animation-duration: 3s;
     animation-name: slidein;
 }

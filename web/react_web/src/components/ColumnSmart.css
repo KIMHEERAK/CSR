@@ -1,0 +1,46 @@
+.column-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 7px solid black;
+}
+
+.column-nav-list {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.column-chapters {
+  display: block;
+  font-size: 12px;
+  color : rgb(46, 46, 46);
+  height: 25px;
+}
+
+
+.column-nav {
+  margin-top: 3%;
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  height: 24px;
+}
+
+.column-nav:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  background-size: auto;
+  text-decoration: none;
+}
+
+.column-nav:active {
+  color: rgb(0, 78, 181);
+  text-decoration: none;
+}
+
+.column-nav:focus {
+  color: rgb(0, 78, 181);
+  text-decoration: none;
+}

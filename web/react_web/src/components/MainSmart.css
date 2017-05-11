@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+.App-header {
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Noto Sans', sans-serif;
+  background-color: rgb(0, 0, 0);
+  height: 60px;
+  padding: 18px;
+  text-align: center;
+  letter-spacing: .08em;
+  word-spacing : 70px;
+  width: 100%;
+}
+
+.company-Header {
+  font-family: 'Noto Sans', sans-serif;
+  position: absolute;
+  padding-top: 9px;
+  padding-left: 20px;
+  color: rgb(241, 245, 245);
+  font-size: 27px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+
+.company-Header:hover {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.company-Header:active {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.company-Header:focus {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.Text-Header{
+  color: rgb(241, 245, 245);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.Text-Header:hover {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.Text-Header:active {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.Text-Header:focus {
+  color: rgb(185, 186, 182);
+  text-decoration: none;
+}
+
+.App-footer {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  width:100%;
+  height:100px;
+  background-color:rgb(242, 242, 242);
+}
+
+.Text-footer1 {
+  font-size : 12px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.055px;
+  color: rgb(125, 124, 124);
+  margin-left: 20%;
+}
+
+.Text-footer2 {
+  font-size : 12px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.055px;
+  color: rgb(125, 124, 124);
+  margin-left: 20%;
+}

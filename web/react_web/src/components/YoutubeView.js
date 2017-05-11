@@ -87,7 +87,7 @@ class YoutubeView extends Component {
         };
 
         const items = this.state.items.map((item) => (
-          <img key={item.src}src={item.src} alt='title or description' data-action={ () => this.handleImgclick(item.id)} />
+          <img key={item.src} src={item.src} data-action={ () => this.handleImgclick(item.id)} />
         ));
 
         return(
@@ -108,14 +108,13 @@ class YoutubeView extends Component {
               <div className="cover-container">
                 <Coverflow
                   width="100%"
-                  height="450"
+                  height="480"
                   displayQuantityOfSide={2}
                   navigation={false}
                   enableScroll={false}
                   clickable={true}
                   enableHeading={true}
-                  active={2}
-                  >
+                  active={2} >
                   {items}
                 </Coverflow>
               </div>

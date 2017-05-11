@@ -1,11 +1,14 @@
 import React, { Component, PropTypes } from 'react';
-import './HomeValue.css'
+import './DoorSlider.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import testImage0 from  '../../public/src/image/x-image2.png';
-import testImage1 from  '../../public/src/image/winner2.jpg';
-import testImage2 from  '../../public/src/image/winner.jpg';
+import testImage0 from  '../public/src/image/3_1.png';
+import testImage1 from  '../public/src/image/3_2.png';
+import testImage2 from  '../public/src/image/3_3.png';
+import testImage3 from  '../public/src/image/3_4.png';
+import testImage4 from  '../public/src/image/3_5.jpg';
+import testImage9 from  '../public/src/image/3_9.jpg';
 
 const propTypes = {
 
@@ -13,19 +16,17 @@ const propTypes = {
 const defaultProps = {
 };
 
-class HomeValue extends Component {
+class DoorSlider extends Component {
     constructor(props) {
         super(props);
-        this.state = { items: [{ id:0, src:testImage0},{ id:1, src:testImage1},{id:2, src:testImage2} ]};
+        this.state = { items: [ { id:0, src:testImage9}, ]};
         this.handleSliderImgclick = this.handleSliderImgclick.bind(this);
     }
 
 
     handleSliderImgclick(id) {
       console.log('id is',id)
-
     }
-
 
 
     shouldComponentUpdate(nextProps, nextState){
@@ -34,36 +35,39 @@ class HomeValue extends Component {
     }
 
 
-
-
     render() {
 
       const settings = {
         dots: false,
+        nextArrow : false,
+        prevArrow : false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 300,
         fade: true,
-        speed: 2000,
+        speed: 300,
+        swipeToSlide : false,
+        draggable : false,
+        centerMode : false,
+
+
       };
 
       const items = this.state.items.map((item) => (
-        <div className="slider-content"> <img key={item.src} src={item.src} onClick={ () => this.handleSliderImgclick(item.id)}/> </div>
+        <div> <img key={item.src} src={item.src} onClick={ () => this.handleSliderImgclick(item.id)}/> </div>
       ));
 
         return(
-          <div>
             <div className ="slider-container">
-              <Slider {...settings}>
+              <Slider className="slider-content" {...settings}>
                   {items}
               </Slider>
             </div>
-          </div>
         );
     }
 }
-HomeValue.propTypes = propTypes;
-HomeValue.defaultProps = defaultProps;
-export default HomeValue;
+DoorSlider.propTypes = propTypes;
+DoorSlider.defaultProps = defaultProps;
+export default DoorSlider;
