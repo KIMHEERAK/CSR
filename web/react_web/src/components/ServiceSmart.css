@@ -10,6 +10,17 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+.Nav-ul {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.Nav-list-li {
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+}
 
 .Nav-Text{
   color: rgb(0, 0, 0);
@@ -18,7 +29,6 @@
   font-style: normal;
   font-weight: 100;
   text-decoration: none;
-  margin-left: 2em;
 }
 
 .Nav-Text:hover {

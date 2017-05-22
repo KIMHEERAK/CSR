@@ -1,25 +1,47 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Sans);
 @import url(https://fonts.googleapis.com/css?family=Pinyon+Script);
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.test {
+}
 .door-company-title-container {
   width: 100%;
   height: 70px;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   letter-spacing: .05em;
 }
 
+ p.door-company-text-desc {
+   margin-top: 5px;
+   text-align: center;
+   font-size: 15px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: normal;
+   margin-bottom : 30px;
+   letter-spacing: .05em;
+   width: 730px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
 .door-company-title-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .door-company-sign-container {
+  margin-top: 15px;
   width: 100%;
-  height: 110px;
+  height: auto;
   padding-top: 10px;
+  padding-bottom: 7px;
   text-align: center;
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
 }
 
 .door-company-sign-text {
@@ -33,20 +55,32 @@
   width: 100%;
   height: 70px;
   text-align: center;
+  margin-top: 25px;
 }
 
+.door-list-ul {
+  list-style: none;
+}
+
+.door-list-li {
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}
 
 .door-list-text-first {
-  font-family: 'Roboto', sans-serif;
   display: inline-block;
+  font-family: 'Roboto', sans-serif;
   color: rgb(103, 103, 103);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 100;
   letter-spacing: .05em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(103, 103, 103);
 }
 
 .door-list-text-first:hover {
-  color: rgb(185, 186, 182);
+  color: rgb(103, 103, 103);
   text-decoration: none;
 }
 
@@ -66,7 +100,6 @@
   color: rgb(103, 103, 103);
   font-size: 20px;
   font-weight: 100;
-  margin-left: 3.5em;
   letter-spacing: .05em;
 }
 

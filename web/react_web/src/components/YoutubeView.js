@@ -82,7 +82,7 @@ class YoutubeView extends Component {
           playerVars: { // https://developers.google.com/youtube/player_parameters
             autoplay: 0,
             color : 'red',
-            playlist : 'xMtSwsbZfaQ'
+            playlist : ['q8Q9fa5R32g']
           }
         };
 
@@ -115,7 +115,6 @@ class YoutubeView extends Component {
                   clickable={true}
                   enableHeading={true}
                   active={2} >
-                  {items}
                 </Coverflow>
               </div>
 

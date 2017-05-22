@@ -7,14 +7,14 @@ import DoorSlider from './DoorSlider'
 import MainSmart from './components/MainSmart'
 import './App.css'
 
-import SignImage from '../public/src/image/sign.JPG'
+import SignImage from '../public/src/image/publishing/sign.JPG'
 const propTypes = {
 };
 const defaultProps = {
 };
 
 const Home = () => (
-  <div>
+  <div className="test">
       <div className="door-company-sign-container">
         <img src={SignImage}/>
       </div>
@@ -24,19 +24,19 @@ const Home = () => (
       </div>
 
       <div className="door-list-container">
-        <ul>
-          <Link className="door-list-text-first" to='/service'>SERVICE</Link>
-          <Link className="door-list-text" to='/column'>COLUMN</Link>
-          <Link className="door-list-text" to='/media'>MEDIA</Link>
+        <ul className="door-list-ul">
+          <li className="door-list-li"><Link className="door-list-text-first" to='/service'>SERVICE</Link></li>
+          <li className="door-list-li"><Link className="door-list-text-first" to='/column'>COLUMN</Link></li>
+          <li className="door-list-li"><Link className="door-list-text-first" to='/media'>MEDIA</Link></li>
         </ul>
       </div>
 
       <div>
-        <p> 3element Lab은 ERIC WHITE와 그 연구원들이 함께 인간관계의 본질을 탐구하기 위해, 다양한 시각과 면모를 지니고 있습니다. </p>
+        <p className="door-company-text-desc"> 3ELEMENTZ LAB IS A LABOTARY THAT STUDIES DEEP INTO NATURE AND ESSENTIALS <br/>OF HUMAN RELASTIONSHIP BY ERIC WHITE AND ITS RESEARCHERS.</p>
       </div>
 
       <div className="door-company-title-container">
-        <b className="door-company-title-text">3.ELEMENTZ</b>
+        <b className="door-company-title-text">3ELEMENTZ</b>
       </div>
   </div>
 )

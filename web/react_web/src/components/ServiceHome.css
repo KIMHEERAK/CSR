@@ -15,22 +15,64 @@
 
 
 .Branding-container {
-    max-width: 100%;
-    height: 600px;
+    width: 100%;
+    height: 700px;
     /*background-color: rgb(255, 0, 0);*/
-    background-color: rgb(255, 255, 255);
-    background-image: url(../../public/src/image/looser_image3.jpg);
+    background-image: url(../../public/src/image/publishing/h_branding.png);
     background-repeat: no-repeat;
     background-size : cover;
-    padding-top: 50px;
+    padding-top: 80px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.Branding-text-container {
+.Branding-text-block {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 30%;
+  text-align: center;
+
+}
+
+.Branding-text-title {
+  display: block;
+  font-size: 23px;
+  color : rgb(255, 255, 255);
+}
+
+.Branding-text-subtitle {
+  display: block;
   font-size: 30px;
   color : rgb(255, 255, 255);
 }
 
-.Branding-link-text-container {
+.Branding-text-link {
+  padding-top: 8px;
+  display: block;
   font-size: 20px;
+}
+
+.Recovery-container {
+    max-width: 100%;
+    height: 700px;
+    background-image: url(../../public/src/image/publishing/r_recovery.png);
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size : cover;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Styling-container {
+    max-width: 100%;
+    height: 700px;
+    background-image: url(../../public/src/image/publishing/styling.png);
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size : cover;
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 20px;
 }

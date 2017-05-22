@@ -12,6 +12,18 @@
   width: 100%;
 }
 
+.header-ul {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.header-li {
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+}
+
 .company-Header {
   font-family: 'Noto Sans', sans-serif;
   position: absolute;

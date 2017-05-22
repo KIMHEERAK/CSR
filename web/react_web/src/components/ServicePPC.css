@@ -13,69 +13,42 @@
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 /*font-family: 'Hanna', sans-serif;*/
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .looser-container {
     max-width: 100%;
     height: 600px;
     /*background-color: rgb(255, 0, 0);*/
     background-color: rgb(255, 255, 255);
-    background-image: url(../../public/src/image/looser_image3.jpg);
+    background-image: url(../../public/src/image/publishing/HB_1.png);
     background-repeat: no-repeat;
     background-size : cover;
+    margin-bottom: 20px;
 }
 
 .looser-text-container {
-    padding-top: 24em;
-    margin-left: 60%;
+    padding-top: 300px;
+    width: 30%;
+    float: right;
+    height: auto;
 }
 
-.looser-text-container-slide {
-    padding-top: 24em;
-    margin-left: 60%;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%
-  }
-
-  to {
-    margin-left: 60%;
-    width: 100%;
-  }
-}
-
-.looser-title-text {
-    font-family: "KoPub Batang";
-
+.looser-text-title {
+    font-family: "Nanum Gothic";
     font-size: 25px;
     font-weight: 700;
     color: rgb(244, 244, 244);
     position: relative;
 }
 
-.looser-body-text {
-    padding-top: 1em;
+.looser-text-subtitle {
+    padding-top: 5px;
     font-family: "Nanum Gothic";
     font-size: 25px;
     font-weight: 900;
     color: rgb(244, 244, 244);
 }
 
-.looser-description {
-    padding-top: 1em;
+.looser-text-desc {
+    padding-top: 5px;
     font-family: "Nanum Gothic";
     font-size: 18px;
     font-weight: 900;
@@ -83,42 +56,50 @@
 }
 
 .consulting-container {
-    margin-top: 2%;
     max-width: 100%;
     height: 600px;
     /*background-color: rgb(255, 0, 0);*/
     background-color: rgb(255, 255, 255);
-    background-image: url(../../public/src/image/consulting_image3.jpg);
+    background-image: url(../../public/src/image/publishing/HB_2.png);
     background-repeat: no-repeat;
     background-size : cover;
-}
-
-.consulting-text-container {
-  padding-top: 18em;
-  padding-left: 35em;
-  margin-left: 30em;
-  text-align: center;
-}
-
-.consulting-title-text {
-    font-family: "KoPub Batang";
-    font-size: 25px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-}
-
-.consulting-body-text {
-    margin-top: 30px;
-    font-family: "Nanum Gothic";
-    font-size: 30px;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
     margin-bottom: 20px;
 }
 
-.consulting-description {
-    margin-top: 10px;
+.consulting-text-container {
+    padding-top: 100px;
+    width: 30%;
+    float: right;
+    height: auto;
+}
+
+.consulting-text-title {
     font-family: "Nanum Gothic";
-    font-size: 16px;
-    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(244, 244, 244);
+    position: relative;
+}
+
+.consulting-text-subtitle {
+    padding-top: 5px;
+    font-family: "Nanum Gothic";
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(244, 244, 244);
+}
+
+.consulting-text-desc {
+    padding-top: 5px;
+    font-family: "Nanum Gothic";
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(244, 244, 244);
+}
+
+
+.request-text {
+    font-size: 15px;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
 }

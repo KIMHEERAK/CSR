@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+  import React, { Component, PropTypes } from 'react'
 import { BrowserRouter as Router, Route, Link, IndexRoute } from 'react-router-dom'
 import ServicePPC from './ServicePPC'
 import ServiceRR from './ServiceRR'
@@ -28,36 +28,24 @@ class ServiceHome extends Component {
               <Router>
                 <div>
                     <div className="Branding-container">
-                      <div>
-                        <b className="Branding-text-container"> Human Branding</b>
-                        <br></br>
-                        <b className="Branding-text-container"> 안될놈을 될놈으로.</b>
-                        <br></br>
-                        <br></br>
-                        <b> <Link className="Branding-link-text-container" to="/service/Branding" onClick={this.handLink}> 자세히 보기 ></Link> </b>
+                      <div className="Branding-text-block">
+                        <b className="Branding-text-title"> Human Branding</b>
+                        <b className="Branding-text-subtitle"> 될놈 이미지 구축</b>
+                        <b> <Link className="Branding-text-link" to="/service/branding" onClick={this.handLink}> 자세히 보기 ></Link> </b>
                       </div>
                     </div>
-                    <br></br>
-                      <div className="Branding-container">
-                        <div>
-                          <b className="Branding-text-container"> Relastionship Recovery</b>
-                          <br></br>
-                          <b className="Branding-text-container"> 안될 상황을 될 상황으로.</b>
-                          <br></br>
-                          <br></br>
-                          <b> <Link className="Branding-link-text-container" to="/service/RR" onClick={this.handLink}>  자세히 보기 ></Link> </b>
+                      <div className="Recovery-container">
+                        <div className="Branding-text-block">
+                          <b className="Branding-text-title"> Relastionship Recovery</b>
+                          <b className="Branding-text-subtitle"> 안될 상황을 될 상황으로.</b>
+                          <b> <Link className="Branding-text-link" to="/service/rr" onClick={this.handLink}>  자세히 보기 ></Link> </b>
                         </div>
                       </div>
-                    <br></br>
-                      <div className="Branding-container">
-                        <div>
-                          <b className="Branding-text-container"> Nominate Styling</b>
-                          <br></br>
-                          <b className="Branding-text-container"> 안될놈아 옷좀 사입어.</b>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <b> <Link className="Branding-link-text-container" to="/service/styling" onClick={this.handLink}>  더 알아보기 ></Link> </b>
+                      <div className="Styling-container">
+                        <div className="Branding-text-block">
+                          <b className="Branding-text-title"> Male Styling</b>
+                          <b className="Branding-text-subtitle"> 수컷의 모습을 입히다.</b>
+                          <b> <Link className="Branding-text-link" to="/service/styling" onClick={this.handLink}>  더 알아보기 ></Link> </b>
                         </div>
                       </div>
                 </div>

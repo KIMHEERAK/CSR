@@ -24,13 +24,15 @@ class ServiceSmart extends Component {
               <Router>
                 <div>
                   <div className="Nav-service">
-                    <b > <Link className="Nav-Text" to="/service/Branding">H-BRANDING</Link> </b>
-                    <b > <Link className="Nav-Text" to="/service/RR">R-RECOVERY</Link> </b>
-                    <b > <Link className="Nav-Text" to="/service/styling">M-STYLING</Link> </b>
+                    <ul className="Nav-ul">
+                      <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/branding">H-BRANDING</Link> </li>
+                      <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/rr">R-RECOVERY</Link> </li>
+                      <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/styling">M-STYLING</Link> </li>
+                    </ul>
                   </div>
                     <Route exact path="/service" component={ServiceHome}/>
-                    <Route path="/service/Branding" component={ServicePPC}/>
-                    <Route path="/service/RR" component={ServiceRR}/>
+                    <Route path="/service/branding" component={ServicePPC}/>
+                    <Route path="/service/rr" component={ServiceRR}/>
                     <Route path="/service/styling" component={ServiceStyle}/>
                 </div>
               </Router>

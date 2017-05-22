@@ -15,8 +15,9 @@
 
 
 .styling-container {
+    margin-bottom: 10px;
     max-width: 100%;
-    height: 600px;
+    height: 680px;
     /*background-color: rgb(255, 0, 0);*/
     background-color: rgb(255, 255, 255);
     background-image: url(../../public/src/image/styling_image.jpg);
@@ -24,14 +25,26 @@
     background-size : cover;
 }
 
+.styling-animal-container {
+    max-width: 100%;
+    height: 680px;
+    /*background-color: rgb(255, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../public/src/image/publishing/s_horse.png);
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+
+
 .styling-text-container {
-  padding-top: 20em;
-  text-align: right;
-  padding-right: 10em;
+  padding-top: 7em;
+  text-align: left;
+  padding-left: 80%;
 }
 
 .styling-title-text {
-    font-family: "KoPub Batang";
+    font-family: "Nanum Gothic";
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255);

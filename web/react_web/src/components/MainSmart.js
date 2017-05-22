@@ -27,11 +27,13 @@ class MainSmart extends Component {
             <div>
               <Router>
                 <div>
-                  <b > <Link className="company-Header" to="/" onClick={this.handLink}>3.ELEMENTZ</Link> </b>
+                  <b > <Link className="company-Header" to="/" onClick={this.handLink}>3ELEMENTZ</Link> </b>
                   <div className="App-header">
-                    <b > <Link className="Text-Header" to="/service" onClick={this.handLink}>SERVICE</Link> </b>
-                    <b > <Link className="Text-Header" to="/column" onClick={this.handLink}>COLUMN</Link> </b>
-                    <b > <Link className="Text-Header" to="/media">MEDIA</Link> </b>
+                    <ul className="header-ul">
+                      <li className="header-li"> <Link className="Text-Header" to="/service" onClick={this.handLink}>SERVICE</Link> </li>
+                      <li className="header-li"> <Link className="Text-Header" to="/column" onClick={this.handLink}>COLUMN</Link> </li>
+                      <li className="header-li"> <Link className="Text-Header" to="/media">MEDIA</Link> </li>
+                    </ul>
                   </div>
                     <Route exact path="/" component={App}/>
                     <Route path="/service" component={ServiceSmart}/>
@@ -43,7 +45,7 @@ class MainSmart extends Component {
 
           <div className="App-footer">
               <div>
-                <b className="Text-footer1"> © 3.ELEMENTZ LAB - ALL RIGHTS RESERVED<br/></b>
+                <b className="Text-footer1"> © 3ELEMENTZ LAB - ALL RIGHTS RESERVED<br/></b>
                 <b className="Text-footer2"> 사업자등록번호 : 000-00-0000 | 통신판매업신고번호 : 제 0000-서울강남-00000호 | 대표이사 : ERIC WHITE | 주소 : 서울 특별시 강남구 영동대로 0000(삼성동, 될놈타워 0000) | <br/></b>
                 <b className="Text-footer2"> 대표전화 : 010-0000-0000</b>
               </div>
