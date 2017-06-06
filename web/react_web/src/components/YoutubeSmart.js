@@ -11,12 +11,12 @@ const defaultProps = {
 class YoutubeSmart extends Component {
     constructor(props) {
         super(props);
-        this.state = {current_YT_id : ['58Px_KGmfVk']};
+        this.state = {current_YT_id : ['H_pPOCQ3jAA']};
         this.handleDropDwonBtnLimitChange = this.handleDropDwonBtnLimitChange.bind(this);
     }
 
     handleDropDwonBtnLimitChange(eventKey) {
-        console.log(eventKey)
+         //console.log(eventKey)
         this.setState({current_YT_id: eventKey});
     }
 

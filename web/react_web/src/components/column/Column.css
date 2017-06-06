@@ -3,7 +3,7 @@
 .column-title-container {
   display: block;
   width: 680px;
-  height: 200px;
+  height: auto;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -28,8 +28,9 @@
   margin-bottom: 14px;
 }
 
+
 .empty-container {
-  height: 250px;
+  height: 150px;
 }
 
 
@@ -40,13 +41,13 @@
 
 h1.column-text-title {
   font-family: "Nanum Gothic";
-  padding-top:30px;
+  padding-top:20px;
   display: block;
   color: rgb(0, 0, 0);
   font-size: 32px;
   font-weight: bold;
   word-spacing: normal;
-  height: 100px;
+  height: 70px;
 }
 
 h3.column-text-subtitle {
@@ -55,7 +56,7 @@ h3.column-text-subtitle {
   display: block;
   color: rgb(0, 0, 0);
   font-size:18px;
-  height: 100px;
+  height: 60px;
 }
 
 b.column-body-title {

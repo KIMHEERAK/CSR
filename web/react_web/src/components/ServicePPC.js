@@ -1,8 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import './ServicePPC.css'
-
-import backImage from  '../../public/src/image/images.jpg';
-
+import Modal from 'react-modal'
+import Product from './Product'
 
 const propTypes = {
 };
@@ -12,26 +11,63 @@ const defaultProps = {
 class ServicePPC extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+          // modal_flag false => close , true => open
+          modal_flag : false,
+        }
+
+        this.handleRequest = this.handleRequest.bind(this)
+        this.handleModalClose = this.handleModalClose.bind(this)
     }
+
+    handleRequest() {
+      this.setState({modal_flag: true})
+    }
+
+    handleModalClose() {
+      this.setState({modal_flag:false})
+    }
+
+
     render() {
         return(
             <div>
               <div className="looser-container">
                 <div className="looser-text-container">
                   <p className="looser-text-title"> LOOK </p>
-                  <p className="looser-text-subtitle"> 당신은 얼마나 안될놈이신가요?</p>
+                  <p className="looser-text-subtitle"> 당신의 현재모습은 어떠한가요?</p>
                   <p className="looser-text-desc"> 지금까지 그래왔으니, 앞으로도 그럴 거예요. </p>
                 </div>
               </div>
 
               <div className="consulting-container">
                 <div className="consulting-text-container">
-                  <p className="consulting-text-title"> BRANDING </p>
-                  <p className="consulting-text-subtitle"> 안될놈의 '안'을 빼다. </p>
+                  <p className="consulting-text-title"> HUMAN BRANDING </p>
                   <p className="consulting-text-desc"> 근본적인 변화없이는 기적도 마법도 일어나지 않습니다.</p>
-                  <a className="request-text">Relationship-Recovery 문의하기 ></a>
+                  <a className="request-text" onClick={this.handleRequest}>문의하기</a>
                 </div>
               </div>
+
+              <Modal
+                   isOpen={this.state.modal_flag}
+                   contentLabel="Product_Page"
+                   onRequestClose={this.handleModalClose}
+                   style={{
+                    overlay: {
+                      backgroundColor: ''
+                    },
+                    content: {
+                      position: "absolute",
+                      top: (window.innerHeight*0.1)+"px",
+                      left: (window.innerWidth*0.2)+"px",
+                      right: (window.innerWidth*0.2)+"px",
+                      bottom: (window.innerHeight*0.1)+"px",
+                      padding: 0
+                    }
+                  }}>
+                   <Product handleModalClose={this.handleModalClose} open_number={1}/>
+              </Modal>
             </div>
         );
     }

@@ -22,7 +22,7 @@ function YT_image(url) {
 
   var result = "http://img.youtube.com/vi/"+url+"/0.jpg"
 
-  console.log('image',result)
+   //console.log('image',result)
 
   return result
 
@@ -37,34 +37,34 @@ class YoutubeView extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-      console.log('view update',nextProps)
+       //console.log('view update',nextProps)
     }
 
     shouldComponentUpdate(nextProps, nextState){
-    console.log("shouldComponentUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
+     //console.log("shouldComponentUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
     return true;
     }
 
     componentWillUpdate(nextProps, nextState){
-    console.log("componentWillUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
+     //console.log("componentWillUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
     }
 
     handleImgclick(key) {
-      console.log('work',key)
+       //console.log('work',key)
 
     }
 
     _onReady(event) {
         // access to player in all event handlers via event.target
-        console.log('ready',event)
+         //console.log('ready',event)
         event.target.pauseVideo();
         // event.target.playVideo();
     }
     _onPlay(event){
-        console.log('Play',event)
+         //console.log('Play',event)
     }
     _onStateChange(event){
-        console.log('StateChange',event)
+         //console.log('StateChange',event)
     }
 
     render() {
@@ -77,12 +77,13 @@ class YoutubeView extends Component {
       // 360p: 640x360
       // 240p: 426x240
         const opts = {
-          height: '480',
-          width: '850',
+          height: '350',
+          width: '620',
           playerVars: { // https://developers.google.com/youtube/player_parameters
             autoplay: 0,
             color : 'red',
-            playlist : ['q8Q9fa5R32g']
+            listType: 'search',
+            playlist : '58Px_KGmfVk,wjXkhP_Kohg,q8Q9fa5R32g'
           }
         };
 
@@ -103,18 +104,19 @@ class YoutubeView extends Component {
                   onStateChange={this._onStateChange.bind(this)}>
                 </YouTube>
                 <br/>
-                <b className="media-description-text"> 3.ELEMENTZ LAB 창립자인 Eric은 인간관계의 3요소를 정립하여 휴먼 브랜딩, 관계 회복, 맨즈 스타일링을 진행하고 있습니다. </b>
+                <b className="media-description-text"> 3.ELEMENTZ LAB 창립자인 ERIC은 인간관계의 3요소를 정립하여 휴먼 브랜딩, 관계 회복, 스타일링을 서비스하고 있습니다. </b>
               </div>
               <div className="cover-container">
                 <Coverflow
                   width="100%"
-                  height="480"
+                  height="100"
                   displayQuantityOfSide={2}
                   navigation={false}
                   enableScroll={false}
                   clickable={true}
                   enableHeading={true}
                   active={2} >
+
                 </Coverflow>
               </div>
 

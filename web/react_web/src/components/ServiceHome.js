@@ -18,7 +18,7 @@ class ServiceHome extends Component {
     }
 
     handLink() {
-      console.log('work');
+       //console.log('work');
       Router.push();
     }
     render() {
@@ -30,22 +30,22 @@ class ServiceHome extends Component {
                     <div className="Branding-container">
                       <div className="Branding-text-block">
                         <b className="Branding-text-title"> Human Branding</b>
-                        <b className="Branding-text-subtitle"> 될놈 이미지 구축</b>
-                        <b> <Link className="Branding-text-link" to="/service/branding" onClick={this.handLink}> 자세히 보기 ></Link> </b>
+                        <b className="Branding-text-subtitle"> 전환의 시작이자 완성</b>
+                        <b> <Link className="Branding-text-link" to="/service/branding" onClick={this.handLink}>자세히 보기</Link> </b>
                       </div>
                     </div>
                       <div className="Recovery-container">
                         <div className="Branding-text-block">
-                          <b className="Branding-text-title"> Relastionship Recovery</b>
-                          <b className="Branding-text-subtitle"> 안될 상황을 될 상황으로.</b>
-                          <b> <Link className="Branding-text-link" to="/service/rr" onClick={this.handLink}>  자세히 보기 ></Link> </b>
+                          <b className="Recovery-text-title"> Relastionship Recovery</b>
+                          <b className="Recovery-text-subtitle"> 균형의 재정립</b>
+                          <b> <Link className="Branding-text-link-black" to="/service/rr" onClick={this.handLink}>자세히 보기</Link> </b>
                         </div>
                       </div>
                       <div className="Styling-container">
                         <div className="Branding-text-block">
                           <b className="Branding-text-title"> Male Styling</b>
-                          <b className="Branding-text-subtitle"> 수컷의 모습을 입히다.</b>
-                          <b> <Link className="Branding-text-link" to="/service/styling" onClick={this.handLink}>  더 알아보기 ></Link> </b>
+                          <b className="Branding-text-subtitle"> 수컷의 모습을 입히다</b>
+                          <b> <Link className="Branding-text-link" to="/service/styling" onClick={this.handLink}>자세히 보기</Link> </b>
                         </div>
                       </div>
                 </div>

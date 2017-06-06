@@ -5,10 +5,9 @@
 }
 
 .column-nav-list {
-  display: block;
-  background-color: rgb(255, 255, 255);
-  float: left;
-  margin-top: 3%;
+  position: fixed;
+  top: 70px;
+  background-color: transparent;
   margin-left: 3%;
 }
 
@@ -21,9 +20,14 @@
 
 
 .column-nav {
-  margin-top: 3%;
   display: block;
   color: rgb(110, 110, 110);
+  font-size: 17px;
+  height: 24px;
+}
+.column-nav-on {
+  display: block;
+  color: rgb(0, 0, 0);
   font-size: 17px;
   height: 24px;
 }
@@ -36,11 +40,11 @@
 }
 
 .column-nav:active {
-  color: rgb(0, 78, 181);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .column-nav:focus {
-  color: rgb(0, 78, 181);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }

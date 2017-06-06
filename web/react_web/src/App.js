@@ -14,12 +14,12 @@ const defaultProps = {
 };
 
 const Home = () => (
-  <div className="test">
-      <div className="door-company-sign-container">
-        <img src={SignImage}/>
+  <div className="door-box">
+      <div className="door-company-title-container">
+        <b className="door-company-title-text">3ELEMENTZ</b>
       </div>
 
-      <div>
+      <div className="slider-box">
         <DoorSlider/>
       </div>
 
@@ -32,11 +32,11 @@ const Home = () => (
       </div>
 
       <div>
-        <p className="door-company-text-desc"> 3ELEMENTZ LAB IS A LABOTARY THAT STUDIES DEEP INTO NATURE AND ESSENTIALS <br/>OF HUMAN RELASTIONSHIP BY ERIC WHITE AND ITS RESEARCHERS.</p>
+        <p className="door-company-text-desc"> 3ELEMENTZ LAB IS AN LABOTARY THAT GOES DEEP INTO THE STUDY OF THE NATURE AND ESSENTIALS OF HUMAN RELATIONSHIP BY ERIC WHITE AND HIS RESEARCHERS.</p>
       </div>
 
-      <div className="door-company-title-container">
-        <b className="door-company-title-text">3ELEMENTZ</b>
+      <div className="door-company-sign-container">
+        <img src={SignImage}/>
       </div>
   </div>
 )

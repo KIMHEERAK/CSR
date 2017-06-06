@@ -1,13 +1,20 @@
 .slider-container {
+  margin-top: 5px;
   position: relative;
-  width: 730px;
+  width: 640px;
   height: 410px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(255, 69, 0);
+  background-color: transparent;
   overflow: hidden;
 }
 
+.slick-slider img{
+  object-position: center;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .slider-content {
     display: block;

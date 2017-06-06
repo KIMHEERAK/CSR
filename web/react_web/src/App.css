@@ -2,7 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Pinyon+Script);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-.test {
+
+
+.door-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .door-company-title-container {
   width: 100%;
@@ -15,12 +19,12 @@
  p.door-company-text-desc {
    margin-top: 5px;
    text-align: center;
-   font-size: 15px;
+   font-size: 14px;
    font-family: 'Montserrat', sans-serif;
    font-weight: normal;
    margin-bottom : 30px;
-   letter-spacing: .05em;
-   width: 730px;
+   width: 640px;
+   height: auto;
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -33,15 +37,14 @@
 }
 
 .door-company-sign-container {
-  margin-top: 15px;
   width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 7px;
   text-align: center;
-  -ms-transform: rotate(-3deg); /* IE 9 */
-  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
-  transform: rotate(-3deg);
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+  transform: rotate(-5deg);
 }
 
 .door-company-sign-text {
@@ -116,4 +119,11 @@
 .door-list-text:focus {
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+
+.slider-box {
+  position: relative;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }

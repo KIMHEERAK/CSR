@@ -11,27 +11,59 @@ const propTypes = {
 const defaultProps = {
 };
 
+class ColumnSmart extends Component {
+  constructor(props) {
+      super(props);
+  }
 
-const ColumnSmart = () => (
-  <div>
-    <Router>
-      <div className="column-container">
-        <div className="column-nav-list">
-          <b className="column-chapters">CHAPTERS</b>
-          <b> <Link className="column-nav" to="/column/intro">1.INTRO</Link> </b>
-          <b> <Link className="column-nav" to="/column/1">2.CENTER</Link> </b>
-          <b> <Link className="column-nav" to="/column/2">3.STIMULATE</Link> </b>
-          <b> <Link className="column-nav" to="/column/3">4.REASON</Link> </b>
-        </div>
-          <Route exact path="/column/" component={Column0}/>
-          <Route path="/column/intro" component={Column0}/>
-          <Route path="/column/1" component={Column1}/>
-          <Route path="/column/2" component={Column2}/>
-          <Route path="/column/3" component={Column3}/>
+  componentWillMount() {
+    // console.log(this.props.location.pathname)
+  }
+
+  render () {
+    return(
+      <div>
+        <Router>
+          <div className="column-container">
+            <div className="column-nav-list">
+              <b className="column-chapters">CHAPTERS</b>
+              <b> <Link className="column-nav" to="/column/intro">1.INTRO</Link> </b>
+              <b> <Link className="column-nav" to="/column/1">2.ERIC STORY</Link> </b>
+              <b> <Link className="column-nav" to="/column/2">3.CENTER</Link> </b>
+              <b> <Link className="column-nav" to="/column/3">4.MIND</Link> </b>
+            </div>
+              <Route exact path="/column/" component={Column0}/>
+              <Route path="/column/intro" component={Column0}/>
+              <Route path="/column/1" component={Column1}/>
+              <Route path="/column/2" component={Column2}/>
+              <Route path="/column/3" component={Column3}/>
+          </div>
+        </Router>
       </div>
-    </Router>
-  </div>
-)
+    );
+  }
+}
+
+// const ColumnSmart = () => (
+//   <div>
+//     <Router>
+//       <div className="column-container">
+//         <div className="column-nav-list">
+//           <b className="column-chapters">CHAPTERS</b>
+//           <b> <Link className="column-nav"+{this.state.current_column==1? "-on" : null} to="/column/intro">1.INTRO</Link> </b>
+//           <b> <Link className="column-nav" to="/column/1">2.CENTER</Link> </b>
+//           <b> <Link className="column-nav" to="/column/2">3.STIMULATE</Link> </b>
+//           <b> <Link className="column-nav" to="/column/3">4.REASON</Link> </b>
+//         </div>
+//           <Route exact path="/column/" component={Column0}/>
+//           <Route path="/column/intro" component={Column0}/>
+//           <Route path="/column/1" component={Column1}/>
+//           <Route path="/column/2" component={Column2}/>
+//           <Route path="/column/3" component={Column3}/>
+//       </div>
+//     </Router>
+//   </div>
+// )
 
 ColumnSmart.propTypes = propTypes;
 ColumnSmart.defaultProps = defaultProps;
