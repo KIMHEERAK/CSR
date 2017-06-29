@@ -77,3 +77,25 @@
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 480px) {
+  .hair-styling-container {
+    height: 210px;
+    background-position: center;
+  }
+
+  .grooming-styling-container {
+    height: 210px;
+    background-position: center;
+  }
+
+  .styling-animal-container {
+    margin-top: 50px;
+    height: 210px;
+    background-position: center;
+  }
+
+  .styling-text-container {
+    display: none;
+  }
+}

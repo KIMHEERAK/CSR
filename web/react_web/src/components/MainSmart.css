@@ -87,7 +87,7 @@
 }
 
 .Text-footer1 {
-  font-size : 12px;
+  font-size : 13px;
   line-height: 28px;
   font-style: normal;
   font-weight: bold;
@@ -97,10 +97,138 @@
 }
 
 .Text-footer2 {
-  font-size : 12px;
+  font-size : 13px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.055px;
   color: rgb(125, 124, 124);
   margin-left: 20%;
+}
+
+.App-footer-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .App-header {
+    display: none;
+  }
+
+  .header-ul {
+    list-style: none;
+  }
+
+  .company-Header {
+    display: none;
+  }
+
+  .App-footer {
+    display: none;
+  }
+  .App-footer-mobile {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    width:100%;
+    height:auto;
+    background-color:rgb(242, 242, 242);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .Text-footer-mobile{
+    font-size : 12px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.055px;
+    color: rgb(125, 124, 124);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Collapsible {
+      padding-top: 20px;
+      margin-left: 10px;
+      margin-right: 0px;
+      display: block;
+      height: auto;
+      border-bottom: 1px solid black;
+  }
+  .Collapsible:after {
+  }
+
+  .Collapsible__trigger {
+      font-family: 'Noto Sans', sans-serif;
+      width:100%;
+      height: 20px;
+      font-size : 25px;
+      color : white;
+  }
+
+  .Collapsible__trigger.is-open {
+      color : rgb(250, 250, 250);
+  }
+
+  .Collapsible__trigger:hover {
+      color : rgb(255, 255, 255);
+      cursor: pointer;
+  }
+
+  .Collapsible__contentInner {
+      margin-left: 20px;
+      text-overflow : auto;
+      font-family: "Nanum Gothic";
+      font-size : 18px;
+      padding-bottom : 10px;
+      padding-top : 10px;
+  }
+
+  .Collapsible__contentInner .info {
+      margin-top: 25px;
+      text-align: right;
+  }
+
+  .Collapsible__contentOuter {
+      margin-top : 10px;
+      margin-bottom : 10px;
+  }
+
+  .menu-item {
+    display: block;
+    height: 35px;
+  }
+
+  .menu-item:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .menu-item-big {
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 20px;
+  }
+
+  .menu-item-big:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .menu-item-big-first {
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 0px;
+  }
+
+  .menu-item-big-first:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
 }

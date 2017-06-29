@@ -6,6 +6,7 @@ import ServiceSmart from './components/ServiceSmart'
 import DoorSlider from './DoorSlider'
 import MainSmart from './components/MainSmart'
 import './App.css'
+import { slide as Menu } from 'react-burger-menu'
 
 import SignImage from '../public/src/image/publishing/sign.JPG'
 const propTypes = {
@@ -15,10 +16,16 @@ const defaultProps = {
 
 const Home = () => (
   <div className="door-box">
+      <Menu width={'100%'}>
+        <a id="3ELEMENTZ" className="menu-item" href="/">3ELEMENTZ</a>
+        <a id="SERVICE" className="menu-item" href="/service">SERVICE</a>
+        <a id="COLUMN" className="menu-item" href="/column">COLUMN</a>
+        <a id="MEDIA" className="menu-item" href="/media">MEDIA</a>
+      </Menu>
       <div className="door-company-title-container">
         <b className="door-company-title-text">3ELEMENTZ</b>
       </div>
-
+      
       <div className="slider-box">
         <DoorSlider/>
       </div>
@@ -66,7 +73,6 @@ class App extends Component {
     }
 
     handLink() {
-      console.log('work')
     }
 
     shouldComponentUpdate(nextProps, nextState){

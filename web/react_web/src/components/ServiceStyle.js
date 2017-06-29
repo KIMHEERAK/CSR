@@ -32,12 +32,19 @@ class ServiceStyle extends Component {
     render() {
         return(
           <div>
-
+            <div className="burger-box">
+              <b> Male Styling</b>
+            </div>
             <div className="styling-animal-container">
               <div className="styling-text-container">
                 <p className="styling-title-text"> CONQUER </p>
                 <span className="styling-description"> 비합리성을 자극하는 형상 </span>
               </div>
+            </div>
+            <div className="text-container-mobile">
+              <p className="text-title-mobile"> CONQUER </p>
+              <p className="text-subtitle-mobile"> 비합리성을 자극하는 형상</p>
+              <br/>
             </div>
 
             <div className="hair-styling-container">
@@ -46,6 +53,11 @@ class ServiceStyle extends Component {
                 <p className="styling-body-text">  Partner With </p>
                 <p className="styling-description"> @BillycatBarberShopSeoul</p>
               </div>
+            </div>
+            <div className="text-container-mobile">
+              <p className="text-title-mobile"> HAIR STYLING </p>
+              <p className="text-subtitle-mobile"> Partner With</p>
+              <p className="text-desc-mobile">  @BillycatBarberShopSeoul </p>
             </div>
 
             <div className="grooming-styling-container">
@@ -56,24 +68,27 @@ class ServiceStyle extends Component {
                 <a className="request-text" onClick={this.handleRequest}>문의하기</a>
               </div>
             </div>
+            <div className="text-container-mobile">
+              <p className="text-title-mobile"> GROOMING </p>
+              <p className="text-subtitle-mobile"> Partner With</p>
+              <p className="text-desc-mobile"> @BillycatBarberShopSeoul </p>
+              <a className="request-text-mobile" onClick={this.handleRequest}>문의하기</a>
+            </div>
 
             <Modal
                  isOpen={this.state.modal_flag}
                  contentLabel="Product_Page"
                  onRequestClose={this.handleModalClose}
-                 style={{
-                  overlay: {
-                    backgroundColor: ''
-                  },
-                  content: {
-                    position: "absolute",
-                    top: (window.innerHeight*0.1)+"px",
-                    left: (window.innerWidth*0.2)+"px",
-                    right: (window.innerWidth*0.2)+"px",
-                    bottom: (window.innerHeight*0.1)+"px",
-                    padding: 0
-                  }
-                }}>
+                 className={{
+                    base: 'myClass',
+                    afterOpen: 'myClass_after-open',
+                    beforeClose: 'myClass_before-close'
+                  }}
+                  overlayClassName={{
+                    base: 'myOverlayClass',
+                    afterOpen: 'myOverlayClass_after-open',
+                    beforeClose: 'myOverlayClass_before-close'
+                  }}>
                  <Product handleModalClose={this.handleModalClose} open_number={3}/>
             </Modal>
           </div>

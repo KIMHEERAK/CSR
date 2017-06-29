@@ -25,3 +25,29 @@
 .slider-content:hover {
   cursor:pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .slider-container {
+    margin-top: 35px;
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .slick-slider img{
+    width: 100%;
+  }
+
+  .slider-content {
+    display: block;
+  }
+
+  .slider-content:hover {
+    cursor:pointer;
+  }
+
+}

@@ -32,8 +32,21 @@ function YT_image(url) {
 class YoutubeView extends Component {
     constructor(props) {
         super(props);
-        this.state = { items: [{ id:0, src:testImage0},{ id:1, src:testImage1},{id:2, src:testImage2},{id:3, src:testImage3}]};
+        this.state = { items: [{ id:0, src:testImage0},{ id:1, src:testImage1},{id:2, src:testImage2},{id:3, src:testImage3}],
+        youtube_width: 620,
+        youtube_height: 350,
+
+      };
         this.handleImgclick=this.handleImgclick.bind(this)
+    }
+
+    componentWillMount() {
+      console.log(window.innerWidth )
+      if(window.innerWidth  <= 480) {
+        this.setState({
+          youtube_width: window.innerWidth, youtube_height: window.innerWidth*0.6
+        })
+      }
     }
 
     componentWillReceiveProps(nextProps) {
@@ -77,8 +90,8 @@ class YoutubeView extends Component {
       // 360p: 640x360
       // 240p: 426x240
         const opts = {
-          height: '350',
-          width: '620',
+          height: this.state.youtube_height,
+          width: this.state.youtube_width,
           playerVars: { // https://developers.google.com/youtube/player_parameters
             autoplay: 0,
             color : 'red',
@@ -93,6 +106,9 @@ class YoutubeView extends Component {
 
         return(
             <div>
+              <div className="burger-box">
+                <b>MEDIA</b>
+              </div>
               <div className="YT-container">
                 <b className="media-text"> 3.ELEMENTZ LAB Media</b>
                 <br/>

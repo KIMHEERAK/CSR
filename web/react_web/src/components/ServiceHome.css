@@ -15,15 +15,15 @@
 
 
 .Branding-container {
-    width: 100%;
-    height: 700px;
-    /*background-color: rgb(255, 0, 0);*/
-    background-image: url(../../public/src/image/publishing/h_branding.png);
-    background-repeat: no-repeat;
-    background-size : cover;
-    padding-top: 80px;
-    text-align: center;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 700px;
+  /*background-color: rgb(255, 0, 0);*/
+  background-image: url(../../public/src/image/publishing/h_branding.png);
+  background-repeat: no-repeat;
+  background-size : cover;
+  padding-top: 80px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .Branding-text-block {
@@ -128,4 +128,88 @@
     padding-top: 60px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.Branding-text-block-mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+  .Branding-container {
+    margin-top:50px;
+    height: 210px;
+    background-position: center;
+  }
+
+  .Recovery-container {
+      margin-top: 15px;
+      max-width: 100%;
+      height: 210px;
+      background-image: url(../../public/src/image/publishing/r_fail.png);
+      background-color: rgb(255, 255, 255);
+      background-repeat: no-repeat;
+      background-size : cover;
+      background-position: center;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .Styling-container {
+      margin-top: 15px;
+      max-width: 100%;
+      height: 210px;
+      background-image: url(../../public/src/image/publishing/styling.png);
+      background-color: rgb(255, 255, 255);
+      background-repeat: no-repeat;
+      background-size : cover;
+      padding-top: 0px;
+      margin-bottom: 20px;
+  }
+
+  .Branding-text-block {
+    display: none;
+  }
+
+  .Branding-text-block-mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .Branding-text-title-mobile {
+    display: block;
+    font-size: 13px;
+    color : rgb(0, 0, 0);
+  }
+
+  .Branding-text-subtitle-mobile {
+    display: block;
+    font-size: 15px;
+    color : rgb(0, 0, 0);
+  }
+
+  .Branding-text-link-mobile {
+    font-family: "Nanum Gothic";
+    margin-top: 8px;
+    display: -webkit-flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    font-size: 11px;
+    color : rgb(0, 0, 0);
+    width: 80px;
+    height: 30px;
+    border : 1px solid black;
+    margin-bottom: 15px;
+  }
+
+  .Branding-text-link:hover {
+    color : rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
 }

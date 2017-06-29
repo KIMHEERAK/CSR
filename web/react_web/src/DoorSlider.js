@@ -25,7 +25,10 @@ class DoorSlider extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          items: [ { id:0, src:img_service_ppc},  { id:1, src:img_service_rr} ,  { id:2, src:img_service_style}, { id:3, src:img_column} ],
+          items: [ { id:0, src:img_service_ppc, url:'/service/branding'},
+                   { id:1, src:img_service_rr, url : '/service/rr'} ,
+                   { id:2, src:img_service_style, url: '/service/styling'},
+                   { id:3, src:img_column, url:'/column'} ],
           current_slide_index : 0,
         };
         this.handleImgclick = this.handleImgclick.bind(this)
@@ -33,17 +36,13 @@ class DoorSlider extends Component {
 
     handleImgclick(idx) {
       if(idx==0) {
-        location.href="/service/branding"
 
       }else if(idx==1) {
-        location.href="/service/rr"
 
       }else if(idx==2) {
-        location.href="/service/styling"
 
 
       }else if(idx==3) {
-        location.href="/column"
       }
 
     }
@@ -60,7 +59,7 @@ class DoorSlider extends Component {
     render() {
 
       const settings = {
-        dots: false,
+        dots: true,
         nextArrow : false,
         prevArrow : false,
         infinite: true,
@@ -71,6 +70,7 @@ class DoorSlider extends Component {
         fade: true,
         speed: 500,
         swipeToSlide : false,
+        swipe: false,
         draggable : false,
         centerMode : false,
         pauseOnHover: true,
@@ -89,34 +89,39 @@ class DoorSlider extends Component {
       //     {items}
       //   </Slider>
       // </div>
+      // <Carousel
+      //     axis="horizontal"
+      //     showThumbs={false}
+      //     showArrows={false}
+      //     onClickItem={ (index) => this.handleImgclick(index)}
+      //     width={window.innerWidth}
+      //     dynamicHeight={false}
+      //     interval={2000}
+      //     autoPlay={true}
+      //     infiniteLoop={true}
+      //     showStatus={false}
+      //     emulateTouch>
+      //
+      //       <div>
+      //           <img src={img_service_ppc} />
+      //       </div>
+      //       <div>
+      //           <img src={img_service_rr} />
+      //       </div>
+      //       <div>
+      //           <img src={img_service_style} />
+      //       </div>
+      //       <div>
+      //           <img src={img_column} />
+      //       </div>
+      //   </Carousel>
 
         return(
-          <Carousel
-              axis="horizontal"
-              showThumbs={false}
-              showArrows={false}
-              onClickItem={ (index) => this.handleImgclick(index)}
-              width="640px"
-              dynamicHeight={false}
-              interval={2000}
-              autoPlay={true}
-              infiniteLoop={true}
-              showStatus={false}
-              emulateTouch>
-
-                <div>
-                    <img src={img_service_ppc} />
-                </div>
-                <div>
-                    <img src={img_service_rr} />
-                </div>
-                <div>
-                    <img src={img_service_style} />
-                </div>
-                <div>
-                    <img src={img_column} />
-                </div>
-            </Carousel>
+          <div className ="slider-container">
+            <Slider ref='slider' className="slider-content" {...settings}>
+              {items}
+            </Slider>
+          </div>
         );
     }
 }

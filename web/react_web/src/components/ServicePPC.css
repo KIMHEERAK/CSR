@@ -148,3 +148,145 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.text-container-mobile {
+  display: none;
+}
+
+
+.ReactModalPortal {
+}
+
+.ReactModal__Overlay {
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height:100%;
+}
+
+.ReactModal__Content {
+  top:10%;
+  height: 80%;
+  left: 20%;
+  width:60%;
+  position: absolute;
+  background-color: white;
+  overflow: auto;
+}
+
+.ReactModal__Content:focus {
+  outline: none;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .ReactModal__Overlay {
+    z-index: 3;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ReactModal__Content {
+    z-index: 3;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .looser-container {
+    margin-top: 50px;
+    max-width: 100%;
+    height: 210px;
+    /*background-color: rgb(255, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../public/src/image/publishing/HB_1.png);
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+
+  .consulting-container {
+      max-width: 100%;
+      height: 210px;
+      /*background-color: rgb(255, 0, 0);*/
+      background-color: rgb(255, 255, 255);
+      background-image: url(../../public/src/image/publishing/HB_2.png);
+      background-repeat: no-repeat;
+      background-size : cover;
+      background-position: center;
+      margin-bottom: 20px;
+  }
+
+  .looser-text-container {
+    display: none;
+  }
+
+  .consulting-text-container {
+    display: none;
+  }
+
+  .text-container-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .text-title-mobile {
+      font-family: "Nanum Gothic";
+      font-size: 15px;
+      font-weight: 700;
+      color: rgb(0, 0, 0);
+  }
+
+  .text-subtitle-mobile {
+      padding-top: 5px;
+      font-family: "Nanum Gothic";
+      font-size: 14px;
+      font-weight: 900;
+      color: rgb(0, 0, 0);
+  }
+
+  .text-desc-mobile {
+      padding-top: 5px;
+      font-family: "Nanum Gothic";
+      font-size: 16px;
+      font-weight: 700;
+      color: rgb(0, 0, 0);
+      margin-bottom: 25px;
+  }
+
+  .request-text-mobile {
+    margin-top: 8px;
+    font-family: "Nanum Gothic";
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    width: 80px;
+    height: 35px;
+    border : 1px solid black;
+    margin-bottom: 30px;
+  }
+
+  .request-text:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

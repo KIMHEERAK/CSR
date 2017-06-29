@@ -18,6 +18,9 @@ class Column2 extends Component {
     render() {
         return(
           <div>
+            <div className="burger-box">
+              <b>COLUMN</b>
+            </div>
               <div className="column-title-container">
                 <h1 className="column-text-title">CENTER</h1>
                   <h3 className="column-text-subtitle">중심에 대한 고찰</h3>

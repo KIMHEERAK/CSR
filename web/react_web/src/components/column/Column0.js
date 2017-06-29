@@ -15,10 +15,12 @@ class Column0 extends Component {
     }
 
 
-
     render() {
         return(
             <div>
+              <div className="burger-box">
+                <b>COLUMN</b>
+              </div>
                 <div className="column-title-container">
                   <h1 className="column-text-title">INTRO</h1>
                   <h3 className="column-text-subtitle"> 3ELEMENTZ는 인간관계의 3요소를 분석하는 연구소입니다.</h3>

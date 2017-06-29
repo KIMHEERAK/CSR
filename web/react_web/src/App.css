@@ -3,11 +3,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-
 .door-box {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .door-company-title-container {
   width: 100%;
   height: 70px;
@@ -126,4 +126,184 @@
   width: 640px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bm-burger-button {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+  /*burger*/
+  .bm-burger-button {
+    display: block;
+    position: fixed;
+    width: 26px;
+    height: 21px;
+    left: 20px;
+    top: 15px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #000000;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    position: fixed !important;
+    height: 25px !important;
+    width: 25px !important;
+    top: 10px !important;
+    right: 10px !important;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #ffffff;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #000000;
+    padding: 20px 0px 0px 20px;
+    font-size: 23px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bm-menu-wrap {
+    top:0;
+  }
+  .menu-item {
+    color: white;
+  }
+
+  .menu-item:hover {
+    color: white;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  /*main*/
+  .door-box {
+    margin-top: 0px;
+  }
+
+  .door-company-title-container {
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: .05em;
+  }
+
+   p.door-company-text-desc {
+     display: none;
+   }
+
+  .door-company-title-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .door-company-sign-container {
+    display: none;
+  }
+
+  .door-list-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .door-list-ul {
+    list-style: none;
+    padding:0;
+  }
+
+  .door-list-li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .door-list-text-first {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(103, 103, 103);
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: .05em;
+    padding-bottom: 5px;
+    border-bottom: none;
+  }
+
+  .door-list-text-first:hover {
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+  }
+
+  .door-list-text-first:active {
+    color: rgb(185, 186, 182);
+    text-decoration: none;
+  }
+
+  .door-list-text-first:focus {
+    color: rgb(185, 186, 182);
+    text-decoration: none;
+  }
+
+  .door-list-text {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: rgb(103, 103, 103);
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: .05em;
+  }
+
+  .door-list-text:hover {
+    color: rgb(185, 186, 182);
+    text-decoration: none;
+  }
+
+  .door-list-text:active {
+    color: rgb(185, 186, 182);
+    text-decoration: none;
+  }
+
+  .door-list-text:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .slider-box {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

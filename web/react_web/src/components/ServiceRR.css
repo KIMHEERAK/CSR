@@ -101,3 +101,40 @@
     font-weight: 400;
     color: rgb(38, 38, 38);
 }
+
+
+@media screen and (max-width: 480px) {
+  .X-container {
+    margin-top: 50px;
+    max-width: 100%;
+    height: 210px;
+    /*background-color: rgb(255, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../public/src/image/x-image2.png);
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+
+  .X-text-container {
+    display: none;
+  }
+
+  .sick-container {
+      max-width: 100%;
+      height: 210px;
+      /*background-color: rgb(255, 0, 0);*/
+      background-color: rgb(255, 255, 255);
+      background-image: url(../../public/src/image/sick_image.jpg);
+      background-repeat: no-repeat;
+      background-size : cover;
+      background-position: center;
+      margin-bottom: 20px;
+  }
+
+  .sick-text-container {
+    display: none;
+  }
+
+}
