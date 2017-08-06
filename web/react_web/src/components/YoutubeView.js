@@ -110,7 +110,7 @@ class YoutubeView extends Component {
                 <b>MEDIA</b>
               </div>
               <div className="YT-container">
-                <b className="media-text"> 3.ELEMENTZ LAB Media</b>
+                <b className="media-text"> 3ELEMENTZ LAB Media</b>
                 <br/>
                 <YouTube className="YT-content"
                   videoId={this.props.YTData}

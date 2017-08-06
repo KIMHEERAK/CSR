@@ -68,7 +68,7 @@
 .door-list-li {
   display: inline-block;
   text-align: center;
-  width: 15%;
+  width: 8%;
 }
 
 .door-list-text-first {
@@ -140,7 +140,7 @@
     position: fixed;
     width: 26px;
     height: 21px;
-    left: 20px;
+    right: 20px;
     top: 15px;
   }
 
@@ -179,6 +179,7 @@
   }
   .menu-item {
     color: white;
+    height: 50px;
   }
 
   .menu-item:hover {
@@ -234,7 +235,7 @@
     width: 100%;
     height: auto;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 0px;
   }
 
   .door-list-ul {

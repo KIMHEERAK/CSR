@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import './Column.css'
 
-import testImage0 from  '../../../public/src/image/publishing/c_1.jpg';
 import SignImage from '../../../public/src/image/publishing/sign.JPG'
+import map_image from  '../../../public/src/image/publishing/looking_for.jpg';
 
 const propTypes = {
 };
@@ -27,7 +27,7 @@ class Column1 extends Component {
                 </div>
 
                 <div className="column-image-container">
-                  <img className="column-image" key={testImage0} src={testImage0}/>
+                  <img className="column-image" key={map_image} src={map_image}/>
                 </div>
 
                 <div className="column-text-container">
@@ -39,11 +39,10 @@ class Column1 extends Component {
                     <p className="column-body-desc"> 3ELEMENTZ 연구원들은 ERIC WHITE의 뜻을 따라 지금도 계속해서 3요소를 연구 중이고 그의 관계론은 많은 이들에게 도움을 주고 있습니다.</p>
                     <p className="column-body-desc"> 전 세계에 그가 정립한 철학의 실용성을 전파하여 많은 사람들이 더욱 풍요롭고 행복한 삶을 영위하는 것이 <strong>ERIC WHITE의 꿈</strong>입니다. </p>
                 </div>
-
-                <div className="empty-container">
-                </div>
                 <div>
                   <img className="column-bottom-sign" src={SignImage}/>
+                </div>
+                <div className="empty-container">
                 </div>
             </div>
         );

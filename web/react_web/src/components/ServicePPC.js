@@ -55,7 +55,7 @@ class ServicePPC extends Component {
               <div className="consulting-container">
                 <div className="consulting-text-container">
                   <p className="consulting-text-title"> HUMAN BRANDING </p>
-                  <p className="consulting-text-desc"> 근본적인 변화없이는 기적도 마법도 일어나지 않습니다.</p>
+                  <p className="consulting-text-desc"> 근본적인 변화 없이는 기적도 마법도 일어나지 않습니다.</p>
                   <a className="request-text" onClick={this.handleRequest}>문의하기</a>
                 </div>
               </div>

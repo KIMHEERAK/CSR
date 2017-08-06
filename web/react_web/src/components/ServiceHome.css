@@ -109,7 +109,7 @@
 .Recovery-container {
     max-width: 100%;
     height: 700px;
-    background-image: url(../../public/src/image/publishing/r_fail.png);
+    background-image: url(../../public/src/image/publishing/r_fail2.png);
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size : cover;
@@ -146,7 +146,7 @@
       margin-top: 15px;
       max-width: 100%;
       height: 210px;
-      background-image: url(../../public/src/image/publishing/r_fail.png);
+      background-image: url(../../public/src/image/publishing/r_fail2.png);
       background-color: rgb(255, 255, 255);
       background-repeat: no-repeat;
       background-size : cover;

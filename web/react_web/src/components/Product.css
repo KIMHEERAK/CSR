@@ -13,7 +13,7 @@
     height: 80px;
 }
 
-.product-header p {
+.intro {
     display: inline-block;
     font-family: "Nanum Gothic";
     float: left;
@@ -101,13 +101,40 @@
     font-weight: 500;
 }
 
+.intro-text {
+  font-size : 15px;
+  float: left;
+  padding: 5px 40px 10px 40px;
+}
+
+.m-call-text {
+  display: none;
+}
+
+.w-call-text{
+  display: block;
+}
+
 @media screen and (max-width: 480px) {
+  .m-call-text {
+    display: block;
+  }
+  .w-call-text{
+    display: none;
+  }
+  .intro-text {
+    font-size : 13px;
+    padding : 10px;
+    float: left;
+    padding: 5px 20px 10px 0px;
+  }
+
   .product-header {
     margin-left: 0px;
     padding-left: 20px;
   }
 
-  .product-header p {
+  .intro {
       display: inline-block;
       font-family: "Nanum Gothic";
       float: left;

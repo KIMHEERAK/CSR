@@ -87,7 +87,6 @@ img.column-bottom-sign {
 
 @media screen and (max-width: 480px) {
   .column-title-container{
-    border-top: 1px solid black;
     width: 100%;
     padding: 20px;
   }
@@ -99,6 +98,8 @@ img.column-bottom-sign {
   .column-image-container {
     width: 100%;
     height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .column-text-container {
@@ -110,7 +111,7 @@ img.column-bottom-sign {
 
   h1.column-text-title {
     margin-top: 0;
-    font-size: 27px;
+    font-size: 25px;
     height: 60px;
   }
 
@@ -122,15 +123,16 @@ img.column-bottom-sign {
   }
 
   b.column-body-title {
-    font-size:15px;
+    margin-top: 0px;
+    font-size:16px;
   }
 
   p.column-body-desc {
-    font-size:13px;
+    font-size:14px;
   }
 
   .empty-container {
-    height: 50px;
+    height: 20px;
     margin-left: 20px;
     margin-right: 20px;
     border-top: 4px solid black;

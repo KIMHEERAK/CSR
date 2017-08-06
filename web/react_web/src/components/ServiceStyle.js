@@ -36,7 +36,7 @@ class ServiceStyle extends Component {
               <b> Male Styling</b>
             </div>
             <div className="styling-animal-container">
-              <div className="styling-text-container">
+              <div className="styling-text-container" style={{float: "left", marginTop: "10%",marginLeft:"15%"}}>
                 <p className="styling-title-text"> CONQUER </p>
                 <span className="styling-description"> 비합리성을 자극하는 형상 </span>
               </div>

@@ -67,6 +67,7 @@
     height: 50px;
     background-color: white;
     text-align: center;
+    border-bottom : 1px solid rgb(207, 207, 207);
   }
   .burger-box b {
     line-height: 50px;

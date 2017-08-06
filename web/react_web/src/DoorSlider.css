@@ -2,7 +2,7 @@
   margin-top: 5px;
   position: relative;
   width: 640px;
-  height: 410px;
+  height: 460px;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 480px) {
   .slider-container {
-    margin-top: 35px;
+    margin-top: 10%;
     position: relative;
     width: 100vw;
     height: 50vh;

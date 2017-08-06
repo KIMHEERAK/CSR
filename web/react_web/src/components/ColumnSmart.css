@@ -49,12 +49,53 @@
   text-decoration: none;
 }
 
+.mobile-nav-list-box {
+  display: none;
+}
 
 @media screen and (max-width: 480px) {
   .column-nav-list {
     display: none;
   }
 
+  .thumb-slide {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  .thumb-slide-content{
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 203px;
+    position: relative;
+  }
+
+  .thumb-slide-content a{
+    text-decoration: none;
+  }
+  .caption {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    color: #fff;
+    width: 100%;
+    line-height: 25px;
+    padding: 1px 5px 0 5px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.4)
+  }
+
+  .mobile-nav-list-box {
+    display: block;
+    margin: 0px 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    webkit-overflow-scrolling: touch;
+  }
   .column-container {
     border : none;
     margin-top: 50px;
