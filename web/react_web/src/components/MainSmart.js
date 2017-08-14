@@ -51,7 +51,6 @@ class MainSmart extends Component {
                 <a id="rr" className="menu-item" href="/service/rr">R-RECOVERY</a>
                 <a id="ms" className="menu-item" href="/service/styling">M-STYLING</a>
               </Collapsible>
-              <a id="center" className="menu-item-big-first" href="/effect">EFFECT</a>
               <Collapsible
                 open = {false}
                 trigger="COLUMN">
@@ -59,8 +58,9 @@ class MainSmart extends Component {
                 <a id="stroy" className="menu-item" href="/column/1">ERIC STORY</a>
                 <a id="center" className="menu-item" href="/column/2">CENTER</a>
                 <a id="MIND" className="menu-item" href="/column/3">MIND</a>
-                <a id="MIND" className="menu-item" href="/column/4">SAFE</a>
-                <a id="MIND" className="menu-item" href="/column/5">SWAMP</a>
+                <a id="SAFE" className="menu-item" href="/column/4">SAFE</a>
+                <a id="SWAMP" className="menu-item" href="/column/5">SWAMP</a>
+                <a id="ANXIETY" className="menu-item" href="/column/6">ANXIETY</a>
               </Collapsible>
               <Collapsible
                 open = {false}
@@ -80,7 +80,6 @@ class MainSmart extends Component {
                   <div className="App-header">
                     <ul className="header-ul">
                       <li className="header-li"> <Link className="Text-Header" to="/service" onClick={this.handLink}>SERVICE</Link> </li>
-                      <li className="header-li"> <Link className="Text-Header" to="/effect">EFFECT</Link> </li>
                       <li className="header-li"> <Link className="Text-Header" to="/column" onClick={this.handLink}>COLUMN</Link> </li>
                       <li className="header-li"> <Link className="Text-Header" to="/review">REVIEW</Link> </li>
                       <li className="header-li"> <span className="Text-Header" onClick={this.handleRequest}>CONTACT</span> </li>

@@ -21,7 +21,6 @@ const Home = () => (
       <Menu right width={'100%'}>
         <a id="3ELEMENTZ" className="menu-item" href="/">3ELEMENTZ</a>
         <a id="SERVICE" className="menu-item" href="/service">SERVICE</a>
-        <a id="EFFECT" className="menu-item" href="/effect">EFFECT</a>
         <a id="COLUMN" className="menu-item" href="/column">COLUMN</a>
         <a id="REVIEW" className="menu-item" href="/review">REVIEW</a>
 
@@ -37,7 +36,6 @@ const Home = () => (
       <div className="door-list-container">
         <ul className="door-list-ul">
           <li className="door-list-li"><Link className="door-list-text-first" to='/service'>SERVICE</Link></li>
-          <li className="door-list-li"><Link className="door-list-text-first" to='/effect'>EFFECT</Link></li>
           <li className="door-list-li"><Link className="door-list-text-first" to='/column'>COLUMN</Link></li>
           <li className="door-list-li"><Link className="door-list-text-first" to='/review'>REVIEW</Link></li>
 

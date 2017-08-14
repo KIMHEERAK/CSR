@@ -7,6 +7,7 @@ import Column3 from './column/Column3'
 import Column0 from './column/Column0'
 import Column4 from './column/Column4'
 import Column5 from './column/Column5'
+import Column6 from './column/Column6'
 var scrollIntoView = require('scroll-into-view');
 import ReactDOM from 'react-dom';
 import circlr_image from '../../public/src/image/publishing/thumb_circle2.jpg'
@@ -15,6 +16,7 @@ import beach_image from  '../../public/src/image/publishing/thumb_beach.jpg';
 import ring_image from '../../public/src/image/publishing/thumb_ring2.jpg'
 import sea_image from '../../public/src/image/publishing/thumb_sea3.jpg'
 import swamp_image from '../../public/src/image/publishing/thumb_swamp.jpg'
+import fear_image from '../../public/src/image/publishing/thumb_fear.jpg'
 
 const propTypes = {
 };
@@ -30,7 +32,8 @@ class ColumnSmart extends Component {
                  { id:2, src:beach_image, title: 'CENTER'},
                  { id:3, src:ring_image,title: 'MIND' },
                  { id:4, src:sea_image, title: 'SAFE'},
-                 { id:5, src:swamp_image, title: 'SWAMP'} ],
+                 { id:5, src:swamp_image, title: 'SWAMP'},
+                 { id:6, src:fear_image, title: 'ANXIETY'} ],
         column_no : null,
       };
   }
@@ -62,6 +65,7 @@ class ColumnSmart extends Component {
               <b> <Link className="column-nav" to="/column/3">4. MIND</Link> </b>
               <b> <Link className="column-nav" to="/column/4">5. SAFE</Link> </b>
               <b> <Link className="column-nav" to="/column/5">6. SWAMP</Link> </b>
+              <b> <Link className="column-nav" to="/column/6">7. ANXIETY</Link> </b>
             </div>
               <Route exact path="/column/" component={Column0}/>
               <Route path="/column/0" component={Column0}/>
@@ -70,6 +74,7 @@ class ColumnSmart extends Component {
               <Route path="/column/3" component={Column3}/>
               <Route path="/column/4" component={Column4}/>
               <Route path="/column/5" component={Column5}/>
+              <Route path="/column/6" component={Column6}/>
           </div>
         </Router>
         <div className="mobile-nav-list-box">

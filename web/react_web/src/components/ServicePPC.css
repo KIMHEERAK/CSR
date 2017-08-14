@@ -13,6 +13,59 @@
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 /*font-family: 'Hanna', sans-serif;*/
 
+
+.intro-container {
+    max-width: 100%;
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    /*background-color: rgb(255, 255, 255);*/
+    background-repeat: no-repeat;
+    background-size : cover;
+    margin-bottom: 20px;
+}
+
+.intro-text-container {
+    padding-top: 200px;
+    width: 100%;
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+.intro-text-title {
+    font-family: "Nanum Gothic";
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(244, 244, 244);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.qoute {
+  color: rgb(244, 244, 244);
+  float: left;
+  font-size: 100px;
+}
+
+.intro-text-subtitle {
+    padding-top: 5px;
+    font-family: "Nanum Gothic";
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(244, 244, 244);
+    margin-bottom: 10px;
+}
+
+.intro-text-desc {
+    margin-top: 8px;
+    padding-top: 5px;
+    font-family: "Nanum Gothic";
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(244, 244, 244);
+}
+
+
 .looser-container {
     max-width: 100%;
     height: 600px;
@@ -25,7 +78,8 @@
 }
 
 .looser-text-container {
-    padding-top: 300px;
+    padding-top: 180px;
+    margin-right: 100px;
     width: 30%;
     float: right;
     height: auto;
@@ -34,18 +88,30 @@
 
 .looser-text-title {
     font-family: "Nanum Gothic";
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 29px;
+    font-weight: 500;
     color: rgb(244, 244, 244);
     position: relative;
+    float: left;
+    margin-bottom: 20px;
 }
 
 .looser-text-subtitle {
     padding-top: 5px;
     font-family: "Nanum Gothic";
-    font-size: 25px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 300;
     color: rgb(244, 244, 244);
+    float: left;
+}
+
+.looser-text-subtitle-first {
+    padding-top: 5px;
+    font-family: "Nanum Gothic";
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(244, 244, 244);
+    float: left;
 }
 
 .looser-text-desc {
@@ -69,7 +135,7 @@
 
 .consulting-text-container {
     padding-top: 160px;
-    margin-right: 30px;
+    margin-right: 90px;
     float: right;
     width: 30%;
     height: auto;
@@ -95,8 +161,8 @@
 .consulting-text-desc {
     padding-top: 5px;
     font-family: "Nanum Gothic";
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 300;
     color: rgb(244, 244, 244);
 }
 
@@ -188,7 +254,14 @@
   overflow-y: hidden !important;
 }
 
+.mobile-margin-top {
+  display: none;
+}
 @media screen and (max-width: 480px) {
+  .mobile-margin-top {
+    display: block;
+    height: 50px;
+  }
   .ReactModal__Overlay {
     z-index: 3;
     top:0px;
@@ -197,7 +270,6 @@
     width: 100%;
     position : fixed;
   }
-
 
   .ReactModal__Content {
     z-index: 3;
@@ -209,16 +281,69 @@
   }
 
   .looser-container {
-    margin-top: 50px;
+    margin-top: 10px;
     max-width: 100%;
     height: 210px;
     /*background-color: rgb(255, 0, 0);*/
     background-color: rgb(255, 255, 255);
-    background-image: url(../../public/src/image/publishing/HB_1.png);
+    background-image: url(../../public/src/image/publishing/HB_1_beta.jpg);
     background-repeat: no-repeat;
     background-size : cover;
     background-position: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .looser-text-container {
+      padding-top: 40px;
+      margin-right: 0px;
+      width: 100%;
+      height: auto;
+      text-align: center;
+  }
+
+  .looser-text-title {
+      font-family: "Nanum Gothic";
+      font-size: 10px;
+      font-weight: 500;
+      color: rgb(244, 244, 244);
+      position: relative;
+      display: block;
+      margin-bottom: 10px;
+      float: none;
+  }
+
+  .text-center-box {
+    float: right;
+    margin-right: 25px;
+  }
+  .looser-text-subtitle {
+      line-height: 8px;
+      padding-top: 0px;
+      font-family: "Nanum Gothic";
+      font-size: 9px;
+      font-weight: 300;
+      color: rgb(244, 244, 244);
+      float: none;
+      text-align: left;
+  }
+
+  .looser-text-subtitle-first {
+    line-height: 8px;
+    padding-top: 0px;
+    font-family: "Nanum Gothic";
+    font-size: 9px;
+    font-weight: 800;
+    color: rgb(244, 244, 244);
+    float: none;
+    text-align: left;
+  }
+
+  .looser-text-desc {
+      padding-top: 0px;
+      font-family: "Nanum Gothic";
+      font-size: 8px;
+      font-weight: 300;
+      color: rgb(244, 244, 244);
   }
 
   .consulting-container {
@@ -233,12 +358,37 @@
       margin-bottom: 20px;
   }
 
-  .looser-text-container {
-    display: none;
+  .consulting-text-container {
+      padding-top: 90px;
+      margin-right: 30px;
+      float: left;
+      width: 100%;
+      height: auto;
+      text-align: center;
   }
 
-  .consulting-text-container {
-    display: none;
+  .consulting-text-title {
+      font-family: "Nanum Gothic";
+      font-size: 16px;
+      font-weight: 700;
+      color: rgb(244, 244, 244);
+      position: relative;
+  }
+
+  .consulting-text-subtitle {
+      padding-top: 5px;
+      font-family: "Nanum Gothic";
+      font-size: 10px;
+      font-weight: 900;
+      color: rgb(244, 244, 244);
+  }
+
+  .consulting-text-desc {
+      padding-top: 5px;
+      font-family: "Nanum Gothic";
+      font-size: 13px;
+      font-weight: 600;
+      color: rgb(244, 244, 244);
   }
 
   .text-container-mobile {
@@ -295,5 +445,56 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .intro-container {
+      max-width: 100%;
+      height: 230px;
+      background-color: rgb(0, 0, 0);
+      /*background-color: rgb(255, 255, 255);*/
+      background-repeat: no-repeat;
+      background-size : cover;
+      margin-bottom: 10px;
+  }
+
+  .intro-text-container {
+      padding-top: 50px;
+      width: 100%;
+      float: left;
+      height: auto;
+      text-align: center;
+  }
+
+  .intro-text-title {
+      font-family: "Nanum Gothic";
+      font-size: 17px;
+      font-weight: 700;
+      color: rgb(244, 244, 244);
+      position: relative;
+      margin-bottom: 20px;
+  }
+
+  .qoute {
+    color: rgb(244, 244, 244);
+    float: left;
+    font-size: 100px;
+  }
+
+  .intro-text-subtitle {
+      padding-top: 3px;
+      font-family: "Nanum Gothic";
+      font-size: 14px;
+      font-weight: 900;
+      color: rgb(244, 244, 244);
+      margin-bottom: 10px;
+  }
+
+  .intro-text-desc {
+      margin-top: 1px;
+      padding-top: 2px;
+      font-family: "Nanum Gothic";
+      font-size: 12px;
+      font-weight: 300;
+      color: rgb(244, 244, 244);
   }
 }

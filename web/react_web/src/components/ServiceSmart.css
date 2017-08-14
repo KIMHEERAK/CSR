@@ -68,6 +68,11 @@
     background-color: white;
     text-align: center;
     border-bottom : 1px solid rgb(207, 207, 207);
+    z-index: 1;
+  }
+
+  .bm-burger-button {
+    z-index: 2 !important;
   }
   .burger-box b {
     line-height: 50px;

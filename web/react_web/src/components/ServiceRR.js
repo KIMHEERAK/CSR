@@ -38,14 +38,14 @@ class ServiceRR extends Component {
               <div className="X-container">
                 <div className="X-text-container">
                   <p className="X-text-title"> RELATIONSHIP </p>
-                  <p className="X-text-subtitle"> 다시 보고 싶은 나의 여자친구,남자친구 </p>
-                  <p className="X-text-desc"> 상대방도 당신이 보고 싶을까요?</p>
+                  <p className="X-text-subtitle">처음부터 나쁘진 않았습니다.</p>
+                  <p className="X-text-desc">좋았던 그 시절로 돌아가고 싶으신가요?</p>
                 </div>
               </div>
               <div className="text-container-mobile">
                 <p className="text-title-mobile"> RELATIONSHIP </p>
-                <p className="text-subtitle-mobile">  다시 보고 싶은 나의 여자친구,남자친구</p>
-                <p className="text-desc-mobile"> 상대방도 당신이 보고 싶을까요? </p>
+                <p className="text-subtitle-mobile">처음부터 나쁘진 않았습니다.</p>
+                <p className="text-desc-mobile">좋았던 그 시절로 돌아가고 싶으신가요?</p>
                 <br/>
               </div>
 
@@ -53,14 +53,14 @@ class ServiceRR extends Component {
                 <div className="sick-text-container">
                   <p className="sick-text-title"> RECOVERY </p>
                   <p className="sick-text-subtitle"> 당신에게 스며든 패배자의 습관 </p>
-                  <p className="sick-text-desc"> 잔인하지만, 지금 상태로는 의미 없습니다.</p>
+                  <p className="sick-text-desc"> 잔인하지만, 지금 상태로는 어렵겠네요.</p>
                   <a className="request-text-black" onClick={this.handleRequest}>문의하기</a>
                 </div>
               </div>
               <div className="text-container-mobile">
                 <p className="text-title-mobile"> RECOVERY </p>
                 <p className="text-subtitle-mobile"> 당신에게 스며든 패배자의 습관</p>
-                <p className="text-desc-mobile"> 잔인하지만, 지금 상태로는 의미 없습니다. </p>
+                <p className="text-desc-mobile"> 잔인하지만, 지금 상태로는 어렵겠네요. </p>
                 <a className="request-text-mobile" onClick={this.handleRequest}>문의하기</a>
               </div>
 
