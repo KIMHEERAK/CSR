@@ -6,12 +6,16 @@ import Review1 from './review/review1'
 import Review2 from './review/review2'
 import Review3 from './review/review3'
 import Review4 from './review/review4'
+import Review5 from './review/review5'
+import Review6 from './review/review6'
 
 import hood_image from '../../public/src/image/publishing/thumb_hood.jpg'
 import gardener_image from  '../../public/src/image/publishing/thumb_flower.jpg';
 import driver_image from  '../../public/src/image/publishing/thumb_driver.jpg';
 import calibe_image from '../../public/src/image/publishing/thumb_CALIBE.jpg'
 import player_image from '../../public/src/image/publishing/thumb_player.jpg'
+import runner_image from '../../public/src/image/publishing/thumb_runner.jpg'
+import spinner_image from '../../public/src/image/publishing/thumb_spinner.jpg'
 
 const propTypes = {
 };
@@ -26,7 +30,9 @@ class ColumnSmart extends Component {
                  { id:1, src:player_image, title: 'PLAYER'} ,
                  { id:2, src:driver_image, title: 'DRIVER'},
                  { id:3, src:calibe_image,title: 'CALIBE' },
-                 { id:4, src:gardener_image, title: 'GARDENER'}, ],
+                 { id:4, src:gardener_image, title: 'GARDENER'},
+                 { id:5, src:runner_image, title: 'RUNNER'},
+                 { id:6, src:spinner_image, title: 'SPINNER'}, ],
         column_no : null,
       };
   }
@@ -47,6 +53,8 @@ class ColumnSmart extends Component {
               <b> <Link className="column-nav" to="/review/2">3. DRIVER</Link> </b>
               <b> <Link className="column-nav" to="/review/3">4. CALIBE</Link> </b>
               <b> <Link className="column-nav" to="/review/4">5. GARDENER</Link> </b>
+              <b> <Link className="column-nav" to="/review/5">6. RUNNER</Link> </b>
+              <b> <Link className="column-nav" to="/review/6">7. SPINNER</Link> </b>
             </div>
               <Route exact path="/review/" component={Review0}/>
               <Route path="/review/0" component={Review0}/>
@@ -54,6 +62,8 @@ class ColumnSmart extends Component {
               <Route path="/review/2" component={Review2}/>
               <Route path="/review/3" component={Review3}/>
               <Route path="/review/4" component={Review4}/>
+              <Route path="/review/5" component={Review5}/>
+              <Route path="/review/6" component={Review6}/>
           </div>
         </Router>
         <div className="mobile-nav-list-box">

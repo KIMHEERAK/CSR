@@ -4,6 +4,7 @@ import ServiceHome from './ServiceHome'
 import ServicePPC from './ServicePPC'
 import ServiceRR from './ServiceRR'
 import ServiceStyle from './ServiceStyle'
+import ServiceHomerun from './ServiceHomerun'
 import './ServiceSmart.css'
 import userIcon from  '../../public/src/icon/user.png';
 
@@ -35,6 +36,7 @@ class ServiceSmart extends Component {
                   <div className="Nav-service">
                     <ul className="Nav-ul">
                       <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/branding">H-BRANDING</Link> </li>
+                      <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/run">PU-101</Link> </li>
                       <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/rr">R-RECOVERY</Link> </li>
                       <li className="Nav-list-li"> <Link className="Nav-Text" to="/service/styling">M-STYLING</Link> </li>
                     </ul>
@@ -43,6 +45,7 @@ class ServiceSmart extends Component {
                     <Route exact path="/service/branding" component={ServicePPC}/>
                     <Route path="/service/rr" component={ServiceRR}/>
                     <Route path="/service/styling" component={ServiceStyle}/>
+                    <Route path="/service/run" component={ServiceHomerun}/>
                 </div>
               </Router>
             </div>

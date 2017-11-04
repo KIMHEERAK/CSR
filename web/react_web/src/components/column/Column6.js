@@ -3,7 +3,7 @@ import './Column.css'
 
 import SignImage from '../../../public/src/image/publishing/sign.JPG'
 import testImage0 from '../../../public/src/image/publishing/gardener.jpg'
-import fear_imag from '../../../public/src/image/publishing/fear.jpg'
+import fear_imag from '../../../public/src/image/publishing/octagon.jpg'
 
 const propTypes = {
 };

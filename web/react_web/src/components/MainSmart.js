@@ -48,6 +48,7 @@ class MainSmart extends Component {
                 open = {false}
                 trigger="SERVICE">
                 <a id="hb" className="menu-item" href="/service/branding">H-BRANDING</a>
+                <a id="hr" className="menu-item" href="/service/run">PU-101</a>
                 <a id="rr" className="menu-item" href="/service/rr">R-RECOVERY</a>
                 <a id="ms" className="menu-item" href="/service/styling">M-STYLING</a>
               </Collapsible>
@@ -61,15 +62,20 @@ class MainSmart extends Component {
                 <a id="SAFE" className="menu-item" href="/column/4">SAFE</a>
                 <a id="SWAMP" className="menu-item" href="/column/5">SWAMP</a>
                 <a id="ANXIETY" className="menu-item" href="/column/6">ANXIETY</a>
+                <a id="YOU" className="menu-item" href="/column/7">YOU</a>
+                <a id="FASHION" className="menu-item" href="/column/8">FASHION</a>
+                <a id="FREEDOM" className="menu-item" href="/column/9">FREEDOM</a>
               </Collapsible>
               <Collapsible
                 open = {false}
                 trigger="REVIEW">
-                <a id="intro" className="menu-item" href="/review/0">MASTER</a>
-                <a id="stroy" className="menu-item" href="/review/1">PLAYER</a>
-                <a id="center" className="menu-item" href="/review/2">DRIVER</a>
-                <a id="center" className="menu-item" href="/review/3">CALIBE</a>
-                <a id="center" className="menu-item" href="/review/4">GARDENER</a>
+                <a id="MASTER" className="menu-item" href="/review/0">MASTER</a>
+                <a id="PLAYER" className="menu-item" href="/review/1">PLAYER</a>
+                <a id="DRIVER" className="menu-item" href="/review/2">DRIVER</a>
+                <a id="CALIBE" className="menu-item" href="/review/3">CALIBE</a>
+                <a id="GARDENER" className="menu-item" href="/review/4">GARDENER</a>
+                <a id="RUNNER" className="menu-item" href="/review/5">RUNNER</a>
+                <a id="SPINNER" className="menu-item" href="/review/6">SPINNER</a>
               </Collapsible>
                 <span id="contact" className="menu-item-big-first" onClick={this.handleRequest}>CONTACT</span>
             </Menu>

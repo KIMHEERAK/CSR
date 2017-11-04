@@ -8,6 +8,10 @@ import Column0 from './column/Column0'
 import Column4 from './column/Column4'
 import Column5 from './column/Column5'
 import Column6 from './column/Column6'
+import Column7 from './column/Column7'
+import Column8 from './column/Column8'
+import Column9 from './column/Column9'
+
 var scrollIntoView = require('scroll-into-view');
 import ReactDOM from 'react-dom';
 import circlr_image from '../../public/src/image/publishing/thumb_circle2.jpg'
@@ -16,7 +20,10 @@ import beach_image from  '../../public/src/image/publishing/thumb_beach.jpg';
 import ring_image from '../../public/src/image/publishing/thumb_ring2.jpg'
 import sea_image from '../../public/src/image/publishing/thumb_sea3.jpg'
 import swamp_image from '../../public/src/image/publishing/thumb_swamp.jpg'
-import fear_image from '../../public/src/image/publishing/thumb_fear.jpg'
+import fear_image from '../../public/src/image/publishing/thumb_octagon.jpg'
+import point_image from '../../public/src/image/publishing/thumb_point.png'
+import vans_image from '../../public/src/image/publishing/thumb_vans.jpg'
+import freedom_image from '../../public/src/image/publishing/thumb_liberty.jpg'
 
 const propTypes = {
 };
@@ -33,7 +40,10 @@ class ColumnSmart extends Component {
                  { id:3, src:ring_image,title: 'MIND' },
                  { id:4, src:sea_image, title: 'SAFE'},
                  { id:5, src:swamp_image, title: 'SWAMP'},
-                 { id:6, src:fear_image, title: 'ANXIETY'} ],
+                 { id:6, src:fear_image, title: 'ANXIETY'},
+                 { id:7, src:point_image, title: 'YOU'},
+                 { id:8, src:vans_image, title: 'FASHION'},
+                 { id:9, src:freedom_image, title: 'FREEDOM'}  ],
         column_no : null,
       };
   }
@@ -66,6 +76,9 @@ class ColumnSmart extends Component {
               <b> <Link className="column-nav" to="/column/4">5. SAFE</Link> </b>
               <b> <Link className="column-nav" to="/column/5">6. SWAMP</Link> </b>
               <b> <Link className="column-nav" to="/column/6">7. ANXIETY</Link> </b>
+              <b> <Link className="column-nav" to="/column/7">8. YOU</Link> </b>
+              <b> <Link className="column-nav" to="/column/8">9. FASHION</Link> </b>
+                <b> <Link className="column-nav" to="/column/9">10. FREEDOM</Link> </b>
             </div>
               <Route exact path="/column/" component={Column0}/>
               <Route path="/column/0" component={Column0}/>
@@ -75,6 +88,9 @@ class ColumnSmart extends Component {
               <Route path="/column/4" component={Column4}/>
               <Route path="/column/5" component={Column5}/>
               <Route path="/column/6" component={Column6}/>
+              <Route path="/column/7" component={Column7}/>
+              <Route path="/column/8" component={Column8}/>
+              <Route path="/column/9" component={Column9}/>
           </div>
         </Router>
         <div className="mobile-nav-list-box">

@@ -5,9 +5,11 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "get-youtube-id": "^1.0.0",
+    "moment": "^2.19.1",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-baseline": "^1.0.1",
+    "react-big-calendar": "^0.16.1",
     "react-bootstrap": "^0.30.8",
     "react-burger-menu": "^2.1.1",
     "react-collapsible": "^1.4.0",

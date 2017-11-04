@@ -9,7 +9,6 @@ const defaultProps = {
 
 import drawing_src from '../../public/src/image/publishing/drawing.jpg'
 import circle_src from '../../public/src/image/publishing/bokeh.jpg'
-import sun_src from '../../public/src/image/publishing/HB_3.jpg'
 
 
 class ServicePPC extends Component {
@@ -64,7 +63,7 @@ class ServicePPC extends Component {
                   <p className="intro-text-title"  style={{'color': '#ffffff', }}> <strong>HUMAN BRANDING</strong>의 기대효과 </p>
                   <p className="intro-text-desc"  style={{'color': '#ffffff','fontWeight' : '600'}}>건강한 인간관계 구축, 원하는 이성과의 교제, 관계의 주도권 획득</p>
                   <p className="intro-text-desc"  style={{'color': '#ffffff', 'fontWeight' : '600'}}> 쉽게 흔들리지 않는 사람, 자기표현이 확실한 사람, 객관적으로도 괜찮은 사람</p>
-                  <p className="intro-text-subtitle" style={{'marginTop' : "18px", 'color': '#ffffff'}}> 3ELEMENTZ를 체득한 당신의 모습</p>
+                  <p className="intro-text-subtitle" style={{'marginTop' : "18px", 'color': '#ffffff'}}> "3ELEMENTZ가 제안하는 삶의 가이드"</p>
                 </div>
               </div>
               <div className="looser-container">
